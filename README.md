@@ -1,161 +1,19 @@
-TalentScout - AI-Powered Hiring Assistant
-TalentScout is an intelligent hiring assistant chatbot designed to simplify the candidate screening process. Powered by OpenAI's GPT-3.5-turbo model, it conducts engaging conversations to collect essential information and generate personalized technical questions based on the candidate's tech stack.
+# TalentScout - AI-Powered Hiring Assistant
 
-Features
-🤖 AI-Powered Conversations: Seamless interactions using natural language processing.
+TalentScout is an intelligent chatbot designed to assist in the initial screening of job candidates. It uses OpenAI's GPT-3.5-turbo model to conduct natural conversations, collect essential information, and generate relevant technical questions based on the candidate's tech stack.
 
-📝 Information Gathering: Collects key details such as name, contact info, experience, and desired positions.
+## Features
 
-💻 Tech Stack Assessment: Generates tailored technical questions based on the candidate's declared tech stack.
+- 🤖 **AI-Powered Conversations**: Natural language processing for smooth interactions.
+- 📝 **Information Gathering**: Collects essential candidate details such as name, contact, experience, desired position, and tech stack.
+- 💻 **Tech Stack Assessment**: Generates relevant technical questions based on the candidate's specified technologies.
+- 🔄 **Context Awareness**: Maintains conversation flow and context for a seamless experience.
+- 🔒 **Data Privacy**: Secure handling of candidate information.
+- 🎯 **Professional Tone**: Maintains an appropriate and formal hiring context.
 
-🔄 Context Awareness: Maintains the conversation's flow, ensuring relevant responses.
+## Technical Stack
 
-🔒 Data Privacy: Secure handling of candidate information, compliant with data privacy standards.
-
-🎯 Professional Tone: Structured to maintain a professional and recruiting-focused atmosphere throughout.
-
-Technical Stack
-Frontend: Streamlit – Easy-to-use UI framework for web applications.
-
-Language Model: OpenAI GPT-3.5-turbo – State-of-the-art conversational model for engaging discussions.
-
-Backend: Python – Efficient and flexible backend development.
-
-Data Storage: Local JSON files – Stores candidate information for easy management.
-
-Installation
-Follow these steps to set up the TalentScout application:
-
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone <repository-url>
-cd TalentScout
-Set up a virtual environment:
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-Install dependencies:
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Create a .env file in the root directory and add your OpenAI API key:
-
-bash
-Copy
-Edit
-OPENAI_API_KEY=your_api_key_here
-Usage
-Launch the Streamlit app:
-
-bash
-Copy
-Edit
-streamlit run main.py
-Open your browser and go to the provided URL (typically http://localhost:8501).
-
-Interact with the chatbot:
-
-Enter your details when prompted.
-
-Answer the technical questions based on your tech stack.
-
-Type 'end', 'exit', or 'bye' to finish the conversation.
-
-Project Structure
-main.py: The core Streamlit app file with chatbot logic.
-
-requirements.txt: Lists all necessary dependencies for the project.
-
-.env: Environment configuration (not included for security).
-
-candidate_info.json: Stores candidate data locally (excluded for security).
-
-Prompt Engineering
-The system prompt used in the chatbot is designed to:
-
-Guide smooth and relevant conversation flow.
-
-Maintain a professional and focused tone throughout interactions.
-
-Ensure relevant technical questions are generated based on the candidate's input.
-
-Handle unexpected inputs gracefully by providing fallback responses.
-
-Data Privacy
-Candidate information is stored securely in local JSON files.
-
-No external data sharing occurs.
-
-All candidate data is processed in compliance with data privacy regulations (such as GDPR).
-
-Challenges & Solutions
-API Rate Limiting:
-
-Implemented a retry mechanism to handle rate-limiting issues from OpenAI.
-
-Added robust error handling to manage API failures gracefully.
-
-Conversation Flow:
-
-Structured prompt to ensure smooth, contextually aware interactions.
-
-Introduced state management to maintain consistency in the conversation.
-
-Data Storage:
-
-Used simple local JSON storage for quick setup; easy to extend to a database if required in the future.
-
-Future Enhancements
-Advanced Features:
-
-Integrate sentiment analysis to gauge candidate's emotions during the conversation.
-
-Support multilingual interactions to engage with candidates from diverse backgrounds.
-
-Offer personalized responses based on user history or preferences.
-
-UI Enhancements:
-
-Add custom styling for a more appealing user experience.
-
-Introduce interactive elements like dropdowns, checkboxes, and progress bars.
-
-Performance Optimization:
-
-Implement response caching to speed up repeated queries.
-
-Support parallel processing for handling multiple users efficiently.
-
-Enable load balancing for better scalability.
-
-Contributing
-We welcome contributions! To contribute, please follow these steps:
-
-Fork the repository.
-
-Create a new feature branch.
-
-Commit your changes.
-
-Push the branch to your fork.
-
-Open a Pull Request with a clear explanation of your changes.
-
-License
-This project is licensed under the MIT License.
-
-Acknowledgments
-OpenAI: For providing the powerful GPT-3.5-turbo model.
-
-Streamlit: For providing an easy-to-use framework for building the web interface.
-
-LangChain: For assisting in managing conversation state and flows.
-
+- **Frontend**: Streamlit
+- **Language Model**: OpenAI GPT-3.5-turbo
+- **Backend**: Python
+- **Data Storage**: Local JSON files
